@@ -10,14 +10,14 @@ Utilize existing data on kickstarter projects to provide Louise feedback regardi
 ### Analysis of Outcomes Based on Launch Date
 - The launch month of May showed the most successful outcomes. 
 - The launch months of January, March, September and November had the least favorable outcomes. 
-![Original Code/VBA_Challenge_2018.png)
+![Original Code](Resources/VBA_Challenge_2018.png)
 
 ### Analysis of Outcomes Based on Goals
 
 - Funding goals in the range from $1000 to $4999 dollars the largest number of and percentage of successes. 
 - Failure rate for funding goals from $5000 to $14,999 ranged from 45% to 46%. - as opposed to 24% to 27% for the ranges under $5000. 
 
-![Refactored Code/VBA_Challenge_2018_Refactored.png)
+![Refactored Code](Resources/VBA_Challenge_2018_Refactored.png)
 
 ### Challenges and Difficulties Encountered
 The overall purpose would need additional refinement by asking  additional clarifying questions throughout the analysis process. 
