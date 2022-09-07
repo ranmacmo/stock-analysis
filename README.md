@@ -3,29 +3,30 @@
 ## Overview of Project
 
 ### Purpose
-Utilize existing data on kickstarter projects to provide Louise feedback regarding what has been successful and/or not based on launch dates and funding goals. 
+Refactor code to analyze stock prices to determine Steve's parents best options for investment. 
 
 ## Analysis and Challenges
+The original code used multiple loops which which was processing intensive. By refactoring the code to take a single pass through the data processing time could be reduced substantially.  
 
-### Analysis of Outcomes Based on Launch Date
-- The launch month of May showed the most successful outcomes. 
-- The launch months of January, March, September and November had the least favorable outcomes. 
+
+### Original processing time 
+- The original code uses a nested for loop that runs through the rows for each ticker which loops through the entire record set for each ticker. The processing time baseline is .28125 seconds. 
+
+
 ![Original Code](Resources/VBA_Challenge_2018.png)
 
-### Analysis of Outcomes Based on Goals
+###  Refactored processing time 
 
-- Funding goals in the range from $1000 to $4999 dollars the largest number of and percentage of successes. 
-- Failure rate for funding goals from $5000 to $14,999 ranged from 45% to 46%. - as opposed to 24% to 27% for the ranges under $5000. 
+- By eliminating the nested for loop a single pass could be taken through the dataset. 
+- The process time time was reduced to .08593 seconds. 
+- Processing time was reduced by 69.4471%  
 
 ![Refactored Code](Resources/VBA_Challenge_2018_Refactored.png)
 
-### Challenges and Difficulties Encountered
-The overall purpose would need additional refinement by asking  additional clarifying questions throughout the analysis process. 
 
 ## Summary
-- The best launch date for a successful outcome historically has been May. 
-- Successful outcomes drop at a downward rate from May to September. 
-- A goal of $5000 or less has a stronger chance of being successful. 
-- There were some large goals that could skew the data; these outliers could affect the data depending on the analysis being done. 
-- Another chart based on project count could be useful to illustrated the large number of projects in the less than $5000 goal range that make up a large number of the overall successful projects. Other percentages could be misleading due to the smaller number of projects in the larger goals ranges. 
+- Refactoring code has the advantage of making it easier to read and more efficient. 
+- Refactoring code should not change the original functionality. Any time code is changed; it requires rerunning all tests to ensure that a bug was not introduced as part of the refactoring process. 
+- The original code may be simpler to understand as it loops through for each ticker. 
+- The refactored code is faster and more efficient but needed to keep track of the ticker change making it slightly more complex but more efficient. 
 
